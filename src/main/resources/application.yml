@@ -4,7 +4,7 @@ spring:
   
   data:
     mongodb:
-      uri: mongodb+srv://mustafayildirim881:MikailYildirim001++@wordtrainerkids.8xfh2e5.mongodb.net/wordtrainer?retryWrites=true&w=majority
+      uri: ${MONGODB_URI:mongodb://localhost:27017/wordtrainer}
       auto-index-creation: true
 
 server:
